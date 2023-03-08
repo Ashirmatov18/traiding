@@ -3,9 +3,7 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  compiler: {
-    styledComponents: true,
-  },
+  cssModules: true,
 
   // images: {
   //   unoptimized: "true",

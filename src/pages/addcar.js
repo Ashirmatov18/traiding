@@ -1,6 +1,6 @@
 import AddEdit from "@/components/Admin/AddEdit";
 import React from "react";
 
-export default function view() {
+export default function Addcar() {
   return <AddEdit />;
 }

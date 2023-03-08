@@ -25,42 +25,42 @@ export default function Test() {
       price: 100,
     },
     {
-      id: 1,
+      id: 2,
       name: "Product Number 1",
       brand: "Brand Name",
       url: "https://media.istockphoto.com/id/1150425295/photo/3d-illustration-of-generic-hatchback-car-perspective-view.jpg?b=1&s=170667a&w=0&k=20&c=QKVzqIOrSi8pYPDM90tUOpECoLcfbe8GVIkJDBI7cb8=",
       price: 100,
     },
     {
-      id: 1,
+      id: 3,
       name: "Product Number 1",
       brand: "Brand Name",
       url: "https://media.istockphoto.com/id/468686480/photo/modern-generic-car-on-white-background.jpg?s=170667a&w=0&k=20&c=-bEVTQ5-_fN1cU0b1Pi-U-zD9d4ew2-ZokcisSY8gEo=",
       price: 100,
     },
     {
-      id: 1,
+      id: 4,
       name: "Product Number 1",
       brand: "Brand Name",
       url: "https://корейские-авто.рф/upload/000/u1/c/7/populjarnye-avto-korei-cover-normal.webp",
       price: 100,
     },
     {
-      id: 1,
+      id: 5,
       name: "Product Number 1",
       brand: "Brand Name",
       url: "https://корейские-авто.рф/upload/000/u1/d/5/populjarnye-avto-japonii-cover-normal.webp",
       price: 100,
     },
     {
-      id: 1,
+      id: 6,
       name: "Product Number 1",
       brand: "Brand Name",
       url: "https://корейские-авто.рф/upload/000/u1/f/7/s-probegom-po-rf-cover-normal.webp",
       price: 100,
     },
     {
-      id: 1,
+      id: 7,
       name: "Product Number 1",
       brand: "Brand Name",
       url: "https://корейские-авто.рф/upload/000/u1/9/d/bez-probega-po-rf-cover-normal.webp",
@@ -147,14 +147,11 @@ export default function Test() {
         {/* </div> */}
 
         <div className={styles.main_bg}>
-          <div className="row no-gutters">
+          {/* <div className="row no-gutters">
             <div
               className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-3 pb-2 bg-white"
               id="owl-carousel-products"
             >
-              {/* <h3 className="text-center">
-                <span className="heading float-left w-100">Наши продукты</span>
-              </h3> */}
               <ul
                 id="owl-carousel-ul"
                 className="owl-carousel owl-loaded owl-drag"
@@ -178,7 +175,7 @@ export default function Test() {
                           <div
                             id="featuredProducts"
                             // className="item float-left w-100"
-                            key={product.name}
+                            key={product.id}
                           >
                             <div className="productListing col-lg-5th col-md-4 col-sm-6 col-xs-12">
                               <a
@@ -208,12 +205,6 @@ export default function Test() {
                                     >
                                       {product.brand}
                                     </h5>
-                                    {/* <span
-                                      style={{ fontSize: "20px" }}
-                                      className="name"
-                                    >
-                                      {product.name}
-                                    </span> */}
                                   </span>
                                 </a>
                               </a>
@@ -225,7 +216,7 @@ export default function Test() {
                 </OwlCarousel>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

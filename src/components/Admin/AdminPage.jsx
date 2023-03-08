@@ -95,7 +95,7 @@ export default function AdminPage() {
   return (
     <main className={styles.main}>
       <div className={styles.button_a}>
-        <Link href={"/addcar"}>
+        <Link href="/addcar">
           <button className={styles.add_button}>Добавить</button>
         </Link>
       </div>

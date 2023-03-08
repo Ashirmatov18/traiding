@@ -4,7 +4,7 @@ import Header from "@/components/Container/Header/Header";
 import React from "react";
 import "../app/globals.css";
 
-export default function contacts() {
+export default function ContactUs() {
   return (
     <div>
       <Header />

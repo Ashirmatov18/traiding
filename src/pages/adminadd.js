@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Cookies from "js-cookie";
 
-export default function add() {
+export default function Add() {
   const router = useRouter();
 
   const logOut = () => {

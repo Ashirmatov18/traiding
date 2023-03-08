@@ -21,7 +21,7 @@ export default function ConnectUs() {
             placeholder=""
           />
           <div className={styles.cut}></div>
-          <label forHtml="firstname" className={styles.placeholder}>
+          <label forhtml="firstname" className={styles.placeholder}>
             ИМЯ ФАМИЛИЯ
           </label>
         </div>
@@ -33,7 +33,7 @@ export default function ConnectUs() {
             placeholder=""
           />
           <div className={styles.cut}></div>
-          <label forHtml="lastname" className={styles.placeholder}>
+          <label forhtml="lastname" className={styles.placeholder}>
             МОДЕЛЬ МАШИНЫ
           </label>
         </div>
@@ -45,7 +45,7 @@ export default function ConnectUs() {
             placeholder=""
           />
           <div className={`${styles.cut} ${styles.cut_short}`}></div>
-          <label for="email" className={styles.placeholder}>
+          <label forhtml="email" className={styles.placeholder}>
             НОМЕР ТЕЛЕФОНА
           </label>
         </div>
@@ -57,7 +57,7 @@ export default function ConnectUs() {
             placeholder=""
           />
           <div className={`${styles.cut} ${styles.cut_short}`}></div>
-          <label for="ЦВЕТ" className={styles.placeholder}>
+          <label forhtml="ЦВЕТ" className={styles.placeholder}>
             ЦВЕТ
           </label>
         </div>
@@ -69,7 +69,7 @@ export default function ConnectUs() {
             placeholder=""
           />
           <div className={`${styles.cut} ${styles.cut_short}`}></div>
-          <label for="COMPLECT" className={styles.placeholder}>
+          <label forhtml="COMPLECT" className={styles.placeholder}>
             КОМПЛЕКТАЦИЯ
           </label>
         </div>
@@ -81,7 +81,7 @@ export default function ConnectUs() {
             placeholder=""
           />
           <div className={`${styles.cut} ${styles.cut_short}`}></div>
-          <label for="COMPLECT" className={styles.placeholder}>
+          <label forhtml="COMPLECT" className={styles.placeholder}>
             ОБЪЁМ ДВИГАТЕЛЯ
           </label>
         </div>
@@ -93,7 +93,7 @@ export default function ConnectUs() {
             placeholder=""
           />
           <div className={`${styles.cut} ${styles.cut_short}`}></div>
-          <label for="COMPLECT" className={styles.placeholder}>
+          <label forhtml="COMPLECT" className={styles.placeholder}>
             ГОД ВЫПУСКА
           </label>
         </div>
