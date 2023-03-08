@@ -1,0 +1,48 @@
+.encar_product {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.product_card {
+  width: 400px;
+  min-height: 300px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-left: 20px;
+  padding: 25px;
+  margin-top: 35px;
+}
+
+.product_image_name,
+.product_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_image_name {
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.product_image_name h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product_card:nth-child(1) h1 {
+  color: darkorange;
+}
+
+.details,
+.pircing_info {
+  flex-basis: 50%;
+}
+
+.img_car {
+  width: 250px;
+  height: 150px;
+  background-size: cover;
+  border-radius: 15px;
+}

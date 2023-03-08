@@ -1,0 +1,403 @@
+.main_bg {
+  margin-top: 700px;
+}
+
+.main_bg_image {
+  /* background: url("../../public/felipe-simo-ktltWUbd1lk-unsplash.jpg"); */
+  background: url("../../public/pngwing.com.png");
+  /* height: 920px; */
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  background-position: right;
+  /* padding-top: 400px; */
+  background-repeat: no-repeat;
+}
+.video_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: #000000cc; */
+}
+
+.logo {
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+}
+
+.logo_center {
+  /* background: #fff; */
+  margin-bottom: 40px;
+}
+
+.logo_center h1 {
+  font-size: 95px;
+  color: #142c56;
+  color: red;
+  /* color: #142c56; */
+}
+
+.logo_center h1 strong {
+  color: #142c56;
+}
+
+.main_name {
+  display: flex;
+  /* flex-direction: column; */
+  /* width: 60%; */
+  /* padding-top: 200px !important; */
+  /* padding: 6rem; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* color: white; */
+  /* justify-content: right; */
+}
+
+.main_page_number {
+  display: flex;
+  width: 580px;
+  padding: 6rem;
+  justify-content: space-between;
+  font-size: 20px;
+  text-align: center;
+}
+
+.main_page_number_first {
+  display: flex;
+}
+
+.main_page_number_first:first-child {
+  border-right: 2px solid red;
+  padding-right: 10px;
+  border: 2px solid white;
+  background-color: #142c56;
+}
+
+.main_page_number_first:last-child {
+  padding-left: 10px;
+  border: 2px solid white;
+  background-color: #142c56;
+}
+
+.main_page_number_img {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../public/16968441221536925048.svg");
+}
+
+.main_page_number_img_second {
+  background-image: url("../../public/193042385716315917374153.svg");
+  width: 64px;
+  height: 64px;
+}
+
+.main_page_number_first span {
+  color: #fece08;
+  padding-bottom: 20px;
+}
+.main_page_number_first p {
+  color: #fff;
+  padding-top: 10px;
+}
+
+.name_company {
+  font-weight: 600;
+  font-size: 70px;
+  text-align: center;
+  left: 0;
+  top: 0;
+  line-height: 150%;
+  /* color: #142c56; */
+  color: #ffff;
+  letter-spacing: 0.5px;
+  /* background-color: #fdce08;  */
+  /* text-shadow: -1px 0 #142c56, 0 3px #142c56, 3px 0 #142c56, 0 -1px #142c56; */
+}
+
+.name {
+  font-size: 80px;
+  text-transform: uppercase;
+  font-family: "Gambetta", serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  /* margin-bottom: 0.8rem; */
+  /* color: #142c56; */
+  color: #fff;
+  outline: none;
+  text-align: center;
+  /* text-shadow: -1px 0 #142c56, 0 3px #142c56, 3px 0 #142c56, 0 -1px #142c56; */
+
+  /* background-color: #142c56; */
+}
+
+.name:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+/* .buttons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 330px;
+} */
+
+.container {
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-align: center; */
+  background-color: PaleGoldenRod;
+  padding: 40px 0px;
+  width: 270px;
+  border-radius: 15px;
+  border: 5px solid gold;
+
+  font-size: 20px;
+}
+
+.btn {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 100%;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+/*btn_background*/
+.effect04 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: black;
+  /* outline: solid 2px #000; */
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+.effect04::before,
+.effect04 span {
+  margin: 0 auto;
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-duration: 0.4s;
+}
+
+/* 文字1を上に */
+.effect04:hover {
+  background-color: white;
+}
+
+/* HOVERしたら文字1を上に */
+.effect04:hover span {
+  -webkit-transform: translateY(-400%) scale(-0.1, 20);
+  transform: translateY(-400%) scale(-0.1, 20);
+}
+
+/*文字2*/
+.effect04::before {
+  content: attr(data-sm-link-text);
+  color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1, 20);
+  transform: translateY(1000%) scale(-0.1, 20);
+}
+
+/* HOVERしたら文字2を上に */
+.effect04:hover::before {
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1, 1);
+  transform: translateY(0) scale(1, 1);
+}
+
+.image_car_slider {
+  height: 400px;
+  background-position: center;
+  background-size: cover !important;
+  /* width: 500px !important; */
+}
+
+.main_info_about {
+  display: flex;
+  justify-content: space-between;
+  height: 720px;
+}
+.main_info_text {
+  width: 50%;
+  font-size: 25px;
+}
+
+.main_info_img {
+  background: url("../../public/bmw-22476.png");
+  width: 50%;
+  height: 700px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 110px;
+}
+
+.car_storage {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.car_card {
+  width: 400px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  height: 320px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 80px;
+  border-color: #142c56;
+}
+
+.car_card_img {
+  background: url("../../public/Black\ Range\ Rover\ Piano\ Car.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 190px;
+  border-bottom: 3px solid red;
+}
+
+.car_card_title {
+  text-align: center;
+  font-size: 27px;
+  color: #fece08;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.button_container {
+  display: flex;
+  justify-content: center;
+}
+.storage_button {
+  width: 50%;
+  height: 90px;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.909);
+  color: black;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 3px solid gold;
+}
+
+.message {
+  width: 60%;
+  height: 555px;
+  margin: 0 auto;
+  background: #fffdf8;
+  box-shadow: 0px 8px 29px rgba(0, 63, 6, 0.18);
+  padding: 40px 80px;
+  z-index: 9999;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 150px;
+  border-radius: 30px;
+}
+
+.message h1 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  /* color: rebeccapurple; */
+  color: #142c56;
+}
+
+.message input {
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid black;
+  background: #fffdf8;
+  padding-top: 20px;
+  margin-top: 10px;
+}
+
+.input_group {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.select_name {
+  height: 60px;
+  border: none;
+  border-bottom: 1px solid black;
+  background: #fffdf8;
+  margin-top: 10px;
+}
+
+.input_message {
+  height: 130px !important;
+}
+
+.message button {
+  height: 64px;
+  /* background: linear-gradient(93.82deg, #a1cb09 13.82%, #6a7a2f 96.11%); */
+  background: #142c56;
+  box-shadow: 5px 5px 20px rgba(1, 63, 7, 0.23);
+  border-radius: 13px;
+  width: 100%;
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 176.7%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#footer_contact {
+  padding-top: 280px;
+  margin-top: 500px;
+}

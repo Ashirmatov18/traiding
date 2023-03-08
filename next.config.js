@@ -3,6 +3,13 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-}
+  compiler: {
+    styledComponents: true,
+  },
 
-module.exports = nextConfig
+  // images: {
+  //   unoptimized: "true",
+  // },
+};
+
+module.exports = nextConfig;

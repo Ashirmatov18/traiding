@@ -1,0 +1,579 @@
+.main_ab {
+  background-color: #fff !important;
+  color: #142c56;
+}
+.main_bg {
+  margin-top: 800px;
+}
+
+.main_bg_image {
+  background: url("../../public/maksim-tarasov-bFTVxTo266E-unsplash\ \(1\).jpg");
+  height: 820px;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  background-position: bottom;
+}
+
+.main_bg_image h1 {
+  z-index: 999;
+  color: white;
+  font-weight: 700;
+  font-size: 200px;
+  text-align: center;
+  padding-top: 125px;
+  margin-bottom: 0;
+  line-height: 296px;
+  margin-top: 150px;
+}
+
+.main_name {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-top: 50px;
+  justify-content: right;
+}
+.name_company {
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+  left: 0;
+  top: 0;
+  line-height: 150%;
+  /* color: #142c56; */
+  color: #fdce08;
+  letter-spacing: 0.5px;
+  /* background-color: #fdce08;  */
+  text-shadow: -1px 0 #142c56, 0 3px #142c56, 3px 0 #142c56, 0 -1px #142c56;
+}
+
+.name {
+  font-size: 80px;
+  text-transform: uppercase;
+  font-family: "Gambetta", serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  /* margin-bottom: 0.8rem; */
+  /* color: #142c56; */
+  color: #fdce08;
+  outline: none;
+  text-align: center;
+  text-shadow: -1px 0 #142c56, 0 3px #142c56, 3px 0 #142c56, 0 -1px #142c56;
+
+  /* background-color: #142c56; */
+}
+
+.background_image {
+  /* background: url("../../public/1.jpg") no-repeat; */
+  height: 900px;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+}
+
+.creation {
+  margin-top: 800px;
+}
+
+.background_image h1 {
+  z-index: 999;
+  color: white;
+  font-weight: 700;
+  font-size: 200px;
+  text-align: center;
+  padding-top: 155px;
+  margin-bottom: 0;
+  line-height: 296px;
+}
+
+.second_image {
+  /* background: url("../../public/1.jpg") no-repeat; */
+  position: absolute;
+  background-size: cover;
+  width: 650px;
+  height: 733px;
+  right: 0;
+}
+
+.first_image {
+  background: url("../../public/evgeny-tchebotarev-aiwuLjLPFnU-unsplash.jpg")
+    no-repeat;
+  width: 751px;
+  height: 389px;
+  position: absolute;
+  background-size: cover;
+  right: 10px;
+  margin-top: -350px;
+  border-radius: 20px !important;
+}
+
+.start_info {
+  padding-top: 50px;
+  width: 45%;
+  font-size: 20px;
+}
+
+.technologies {
+  margin-top: 200px;
+  margin-bottom: 120px;
+}
+
+.tech_first {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.picture_info {
+  width: 30%;
+}
+
+.technologies h1 {
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.tech_first h3 {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.tech_first h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+  padding-top: 15px;
+}
+
+.first_tech_pic {
+  background-image: url("../../public/1.jpg");
+  background-size: contain;
+  width: 350px;
+  height: 360px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.second_tech_pic {
+  background-image: url("../../public/2.jpg");
+  background-size: cover;
+  width: 350px;
+  height: 360px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: top;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.third_tech_pic {
+  background-image: url("../../public/3.jpg");
+  background-size: cover;
+  width: 350px;
+  height: 360px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+  border-color: black 1px solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.fourth_tech_pic {
+  background-image: url("../../public/4.jpg");
+  background-size: cover;
+  width: 350px;
+  height: 360px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.fifth_tech_pic {
+  background-image: url("../../public/5.jpg");
+  background-size: cover;
+  width: 350px;
+  height: 360px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sixth_tech_pic {
+  background-image: url("../../public/reed-naliboff-vJ7DmceYGQY-unsplash.jpg");
+  background-size: cover;
+  width: 350px;
+  height: 360px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.e {
+  /* background-image: url("../images/Три\ э.png"); */
+  background-repeat: no-repeat;
+  height: 590.2px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  margin-top: 75px;
+  background-position: center;
+}
+
+.join_us {
+  margin-top: 750px;
+  margin-bottom: 100px;
+}
+
+.join_us h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.stuff {
+  display: flex;
+  justify-content: center;
+  width: 84%;
+  margin: 0 auto;
+}
+
+.men {
+  width: 45%;
+  height: 453px;
+  box-shadow: 8px 9px 40px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.person_picture {
+  /* background-image: url("../images/young\ man\ standing\ and\ looking\ at\ his\ watch.jpg"); */
+  background-repeat: no-repeat;
+  height: 380px;
+  width: 30%;
+}
+
+.woman_picture {
+  /* background-image: url("../images/young\ woman\ standing\ and\ smiling.jpg"); */
+  background-repeat: no-repeat;
+  height: 380px;
+  width: 30%;
+}
+
+.person_info h2 {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+
+.person_info h5 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.men:nth-child(2) {
+  margin-left: 20px;
+}
+
+.join_button {
+  width: 84%;
+  margin-top: 40px;
+  height: 64px;
+  background: linear-gradient(93.82deg, #003f06 13.82%, #006d0b 96.11%);
+  box-shadow: 5px 5px 20px rgba(1, 63, 7, 0.23);
+  border-radius: 13px;
+  font-weight: 600;
+  font-size: 19px;
+  color: white;
+}
+
+.button_style {
+  display: flex;
+  justify-content: center;
+}
+
+.calculator {
+  width: 400px;
+  background-color: #142c56;
+  color: white;
+  height: 400px;
+}
+
+.center {
+  position: relative;
+  padding: 50px 50px;
+  background: #fff;
+  border-radius: 10px;
+  border: 5px solid black;
+  width: 500px;
+}
+.center h1 {
+  font-size: 2em;
+  border-left: 5px solid dodgerblue;
+  padding: 10px;
+  color: #000;
+  letter-spacing: 5px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.center .inputbox {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+.center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+.center .inputbox:last-child {
+  margin-bottom: 0;
+}
+.center .inputbox span {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 1em;
+  transition: 0.6s;
+  font-family: sans-serif;
+}
+.center .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+}
+.center .inputbox [type="button"] {
+  width: 50%;
+  background: dodgerblue;
+  color: #fff;
+  border: #fff;
+}
+.center .inputbox:hover [type="button"] {
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
+
+.input_text::-webkit-outer-spin-button,
+.input_text::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1450px) {
+  .information {
+    flex-direction: column;
+  }
+  .first_section {
+    padding-top: 40px;
+    justify-content: space-between;
+  }
+
+  .first_image {
+    width: 100%;
+    margin-top: 0 !important;
+    height: 404px;
+  }
+  .second_image {
+    width: 100%;
+    height: 405px;
+  }
+  .start_info {
+    margin-top: 420px;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .tech_first {
+    padding: 0 30px;
+  }
+  .picture_info {
+    width: 28%;
+  }
+  .first_tech_pic {
+    width: 226px;
+    margin: 0 auto;
+    height: 232px;
+  }
+  .second_tech_pic {
+    width: 226px;
+    height: 232px;
+    margin: 0 auto;
+  }
+  .third_tech_pic {
+    width: 226px;
+    margin: 0 auto;
+    height: 232px;
+  }
+  .fourth_tech_pic {
+    width: 226px;
+    margin: 0 auto;
+    height: 232px;
+  }
+  .fifth_tech_pic {
+    width: 226px;
+    margin: 0 auto;
+    height: 232px;
+  }
+  .sixth_tech_pic {
+    width: 226px;
+    margin: 0 auto;
+    height: 232px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .men {
+    flex-direction: column;
+    height: 553px;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .person_picture {
+    width: 50%;
+    background-position: center;
+  }
+  .woman_picture {
+    background-position: center;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .picture_info {
+    width: 220px;
+  }
+  .tech_first {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .e {
+    background-size: contain;
+    height: 300px;
+  }
+  .join_us {
+    margin-top: 450px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .stuff {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .men {
+    justify-content: center;
+    width: 80%;
+    margin: 15px auto !important;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .background_image h1 {
+    font-size: 150px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .second_section_image {
+    height: 520px;
+    background-size: cover;
+  }
+
+  .first_image {
+    height: 220px;
+    background-size: cover;
+  }
+  .start_info {
+    margin-top: 240px;
+  }
+
+  .e {
+    /* background: url("../images/Три\ э.jpg") no-repeat; */
+    width: 100%;
+    height: 1200.2px;
+    background-size: cover;
+  }
+  .join_us {
+    margin-top: 1400px;
+  }
+  .technologies h1 {
+    font-size: 24px;
+  }
+  .tech_first h2 {
+    font-size: 21px;
+  }
+  .men {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .picture_info {
+    width: 100%;
+  }
+  .creation_title {
+    padding: 0 20px;
+  }
+  .second_image {
+    margin-top: 25px;
+  }
+  .technologies h1 {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .e {
+    background-size: contain;
+    height: 1100px;
+  }
+  .background_image h1 {
+    font-size: 100px;
+  }
+  .join_us {
+    margin-top: 1200px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .join_us {
+    margin-top: 1050px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .join_us {
+    margin-top: 1000px;
+  }
+}
