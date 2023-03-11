@@ -10,7 +10,7 @@ import Footer from "./Container/footer/Footer";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/images/IMG_0844.PNG";
+// import logo from "../../public/images/IMG0844.PNG";
 // import call from "../../public/images/16968441221536925048.svg";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -213,11 +213,11 @@ export default function Test() {
         {/* <div className={styles.main_bg_image}> */}
         <div className={styles.overlay}></div>
         <video className={styles.video_bg} autoPlay loop muted>
-          <source src="./video3.mp4" />
+          <source src="./images/video3.mp4" />
         </video>
         <div className={styles.main_name}>
           <div className={styles.logo_center}>
-            <Image className={styles.logo} src={logo} alt="main_logo" />
+            {/* <Image className={styles.logo} src={logo} alt="main_logo" /> */}
 
             <h1>
               Автомобили <br /> из{" "}

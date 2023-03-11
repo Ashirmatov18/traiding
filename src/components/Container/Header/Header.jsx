@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "../../../../public/styles/Header.module.css";
-import logo from "../../../../public/images/IMG_0844.PNG";
+// import logo from "../../../../public/images/IMG0844.PNG";
 import Link from "next/link";
 
 export default function Header() {
@@ -14,9 +14,9 @@ export default function Header() {
         </label>
         <label htmlFor={styles.active} className={styles.close}></label>
         <div className={styles.wrapper}>
-          <Link href="/">
-            <Image className={styles.logo} src={logo} alt="logo" />
-          </Link>
+          {/* <Link href="/"> */}
+          {/* <Image className={styles.logo} src={logo} alt="logo" /> */}
+          {/* </Link> */}
 
           <ul>
             <li>

@@ -11,15 +11,10 @@
       ],
       "name": "src/middleware",
       "page": "/",
-      "matchers": [
-        {
-          "regexp": "^/.*$"
-        }
-      ],
-      "wasm": [],
-      "assets": []
+      "regexp": "^/.*$",
+      "wasm": []
     }
   },
   "functions": {},
-  "version": 2
+  "version": 1
 }

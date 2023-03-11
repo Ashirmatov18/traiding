@@ -1,6 +1,5 @@
 .contacts_bg {
-  background: url("../../public/images/felipe-simo-kxwKM0_6Of4-unsplash.jpg")
-    no-repeat;
+  background: url("/images/felipe-simo-kxwKM0_6Of4-unsplash.jpg") no-repeat;
   height: 900px;
   background-size: cover;
   position: absolute;
@@ -56,7 +55,7 @@
 }
 
 .map {
-  background: url("../../public/images/Mapsicle\ Map.jpg") no-repeat;
+  background: url("/images/Mapsicle\ Map.jpg") no-repeat;
   width: 633px;
   background-size: contain;
   height: 633px;

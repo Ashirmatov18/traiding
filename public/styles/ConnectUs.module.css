@@ -3,7 +3,7 @@
 }
 
 .main_bg_image {
-  background: url("../../public/images/erik-mclean-ZRns2R5azu0-unsplash.jpg");
+  background: url("/images/erik-mclean-ZRns2R5azu0-unsplash.jpg");
   height: 820px;
   background-size: cover;
   position: absolute;

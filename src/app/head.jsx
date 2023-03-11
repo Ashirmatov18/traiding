@@ -8,3 +8,4 @@ export default function Head() {
     </>
   );
 }
+// "next": "13.1.2",

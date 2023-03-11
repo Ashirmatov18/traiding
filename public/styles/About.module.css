@@ -7,7 +7,7 @@
 }
 
 .main_bg_image {
-  background: url("../../public/images/maksim-tarasov-bFTVxTo266E-unsplash\ \(1\).jpg");
+  background: url("/images/maksim-tarasov-bFTVxTo266E-unsplash\ \(1\).jpg");
   height: 820px;
   background-size: cover;
   position: absolute;
@@ -70,7 +70,7 @@
 }
 
 .background_image {
-  /* background: url("../../public/1.jpg") no-repeat; */
+  /* background: url("/1.jpg") no-repeat; */
   height: 900px;
   background-size: cover;
   position: absolute;
@@ -97,7 +97,7 @@
 }
 
 .second_image {
-  /* background: url("../../public/1.jpg") no-repeat; */
+  /* background: url("/1.jpg") no-repeat; */
   position: absolute;
   background-size: cover;
   width: 650px;
@@ -106,7 +106,7 @@
 }
 
 .first_image {
-  background: url("../../public/images/evgeny-tchebotarev-aiwuLjLPFnU-unsplash.jpg")
+  background: url("/images/evgeny-tchebotarev-aiwuLjLPFnU-unsplash.jpg")
     no-repeat;
   width: 751px;
   height: 389px;
@@ -160,7 +160,7 @@
 }
 
 .first_tech_pic {
-  background-image: url("../../public/20945292.jpg");
+  background-image: url("/images/20945292.jpg");
   background-size: contain;
   width: 350px;
   height: 360px;
@@ -171,7 +171,7 @@
 }
 
 .second_tech_pic {
-  background-image: url("../../public/2.jpg");
+  background-image: url("/images/2.jpg");
   background-size: cover;
   width: 350px;
   height: 360px;
@@ -182,7 +182,7 @@
 }
 
 .third_tech_pic {
-  background-image: url("../../public/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg");
+  background-image: url("/images/kostiantyn-li-1sCXwVoqKAw-unsplash.jpg");
   background-size: cover;
   width: 350px;
   height: 360px;
@@ -194,7 +194,7 @@
 }
 
 .fourth_tech_pic {
-  background-image: url("../../public/4.jpg");
+  background-image: url("/images/4.jpg");
   background-size: cover;
   width: 350px;
   height: 360px;
@@ -205,7 +205,7 @@
 }
 
 .fifth_tech_pic {
-  background-image: url("../../public/5995357.jpg");
+  background-image: url("/images/5995357.jpg");
   background-size: cover;
   width: 350px;
   height: 360px;
@@ -216,7 +216,7 @@
 }
 
 .sixth_tech_pic {
-  background-image: url("../../public/reed-naliboff-vJ7DmceYGQY-unsplash.jpg");
+  background-image: url("/images/reed-naliboff-vJ7DmceYGQY-unsplash.jpg");
   background-size: cover;
   width: 350px;
   height: 360px;
