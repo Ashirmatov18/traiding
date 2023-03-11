@@ -1,9 +1,8 @@
-"use client";
 import React from "react";
 import axios from "axios";
 import { useState, useEffect, useCallback } from "react";
 import Header from "./Container/Header/Header";
-import styles from "../styles/Test.module.css";
+import styles from "../../public/styles/Test.module.css";
 import dynamic from "next/dynamic";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -13,7 +12,10 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "../../public/IMG_0844.PNG";
 import call from "../../public/16968441221536925048.svg";
-// import videobg from "../../public/videobg.mp4";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
 
 export default function Test() {
   let productsp = [
@@ -106,7 +108,106 @@ export default function Test() {
     },
   };
 
+  const [year, setYear] = useState("less-than-3y");
+  const [capacity, setCapacity] = useState("");
+  const [cost, setCost] = useState("");
+  const [customsDuty, setCustomsDuty] = useState("");
+
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
+
+  function handleYearChange(event) {
+    setYear(event.target.value);
+  }
+
+  function handleCapacityChange(event) {
+    setCapacity(event.target.value);
+  }
+
+  function handleCostChange(event) {
+    setCost(event.target.value);
+  }
+
+  function calculateCustomsDuty() {
+    var result;
+    if (year === "less-than-3y") {
+      result = calculateLessThan3y(capacity, cost);
+    } else if (year === "more-than-3y") {
+      result = calculateMoreThan3y(capacity);
+    } else if (year === "more-than-5y") {
+      result = calculateMoreThan5y(capacity);
+    } else {
+      alert("Something went wrong");
+      return;
+    }
+
+    setCustomsDuty(result);
+  }
+
+  function calculateLessThan3y(capacity, cost) {
+    var percentageCost;
+    var cm3Cost;
+
+    if (cost <= 8500) {
+      percentageCost = cost * 0.54;
+      cm3Cost = capacity * 2.5;
+    } else if (cost <= 16700) {
+      percentageCost = cost * 0.48;
+      cm3Cost = capacity * 3.5;
+    } else if (cost <= 42300) {
+      percentageCost = cost * 0.48;
+      cm3Cost = capacity * 5.5;
+    } else if (cost <= 84500) {
+      percentageCost = cost * 0.48;
+      cm3Cost = capacity * 7.5;
+    } else if (cost <= 169000) {
+      percentageCost = cost * 0.48;
+      cm3Cost = capacity * 15;
+    } else {
+      percentageCost = cost * 0.48;
+      cm3Cost = capacity * 20;
+    }
+
+    return percentageCost > cm3Cost ? percentageCost : cm3Cost;
+  }
+
+  function calculateMoreThan3y(capacity) {
+    if (capacity <= 1000) return capacity * 1.5;
+    else if (capacity <= 1500) return capacity * 1.7;
+    else if (capacity <= 1800) return capacity * 2.5;
+    else if (capacity <= 2300) return capacity * 2.7;
+    else if (capacity <= 3000) return capacity * 3;
+    else return capacity * 3.6;
+  }
+
+  function calculateMoreThan5y(capacity) {
+    if (capacity <= 1000) return capacity * 3;
+    else if (capacity <= 1500) return capacity * 3.2;
+    else if (capacity <= 1800) return capacity * 3.5;
+    else if (capacity <= 2300) return capacity * 4.8;
+    else if (capacity <= 3000) return capacity * 5;
+    else return capacity * 5.7;
+  }
+
+  function preventNegativeNumbers(event) {
+    const { key, target } = event;
+    if (key === "-" && !target.value) {
+      // prevent writing negative symbol if the input is empty
+      event.preventDefault();
+    } else if (key === "-" && target.value) {
+      // prevent writing negative symbol if there is already a minus sign
+      if (target.value.includes("-")) {
+        event.preventDefault();
+      }
+    } else if (key < "0" || key > "9") {
+      // prevent writing non-numeric characters
+      event.preventDefault();
+    }
+  }
+
   return (
+    // <MainLayout>
     <div>
       <div>
         {/* <div className={styles.main_bg_image}> */}
@@ -116,7 +217,7 @@ export default function Test() {
         </video>
         <div className={styles.main_name}>
           <div className={styles.logo_center}>
-            {/* <Image className={styles.logo} src={logo} /> */}
+            <Image className={styles.logo} src={logo} />
 
             <h1>
               Автомобили <br /> из{" "}
@@ -147,7 +248,7 @@ export default function Test() {
         {/* </div> */}
 
         <div className={styles.main_bg}>
-          {/* <div className="row no-gutters">
+          <div className="row no-gutters">
             <div
               className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-3 pb-2 bg-white"
               id="owl-carousel-products"
@@ -216,7 +317,7 @@ export default function Test() {
                 </OwlCarousel>
               </ul>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
 
@@ -322,19 +423,83 @@ export default function Test() {
           color: "#142c56",
         }}
       >
-        Связаться с нами
+        Высчитать цену
       </h1>
+      <div className={styles.center}>
+        <h1>КАЛЬКУЛЯТОР</h1>
+        <form>
+          <FormControl
+            fullWidth
+            style={{ width: "100%", marginBottom: "50px" }}
+          >
+            <InputLabel id="demo-simple-select-label">Год выпуска</InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              id="model-year"
+              value={year}
+              label="Age"
+              onChange={handleYearChange}
+            >
+              <MenuItem value="less-than-3y">Меньше 3х лет</MenuItem>
+              <MenuItem value="more-than-3y">Больше 3 лет</MenuItem>
+              <MenuItem value="more-than-5y">Больше 5 лет</MenuItem>
+            </Select>
+          </FormControl>
+          <div className={styles.inputbox}>
+            <input
+              id="vehicle-capacity"
+              type="number"
+              value={capacity}
+              onChange={handleCapacityChange}
+              required="required"
+              onKeyPress={preventNegativeNumbers}
+              className={styles.input_text}
+            />
+            <span>
+              ОБЪЁМ В М<sup>3</sup>
+            </span>
+          </div>
+          {!!year && year === "less-than-3y" ? (
+            <>
+              <div className={styles.inputbox}>
+                {/* <label htmlFor="vehicle-cost">Цена в евро:</label> */}
+                <input
+                  id="vehicle-cost"
+                  type="number"
+                  value={cost}
+                  onChange={handleCostChange}
+                  required="required"
+                  onKeyPress={preventNegativeNumbers}
+                  className={styles.input_text}
+                />
+                <span>ЦЕНА</span>
+              </div>
+            </>
+          ) : (
+            <></>
+          )}
+          <div className={styles.inputbox}>
+            <input
+              type="button"
+              value="Рассчитать"
+              onClick={calculateCustomsDuty}
+            />
+          </div>
+        </form>
+        {customsDuty && (
+          <div className={styles.calc_final_result}>
+            <p>
+              Итоговая цена: <strong>{customsDuty}</strong> Евро
+            </p>
+          </div>
+        )}
+      </div>
       <div className={styles.connect_us}>
         <div className={styles.message}>
           <h1>Оставить сообщение</h1>
           <div className={styles.input_group}>
             <input type="text" placeholder="Ф.И.О" />
             <input type="text" placeholder="E-mail" />
-            <select placeholder="Выбрать тему" className={styles.select_name}>
-              <option value="volvo">Вид</option>
-              {/* <option value="saab">!</option>
-              <option value="opel">2</option> */}
-            </select>
             <input
               className={styles.input_message}
               type="text"

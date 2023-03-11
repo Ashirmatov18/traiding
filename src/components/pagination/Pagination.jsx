@@ -1,6 +1,6 @@
 import * as React from "react";
 import _ from "lodash";
-import styles from "../../styles/Pagination.module.css";
+import styles from "../../../public/styles/Pagination.module.css";
 
 export default function PaginationRounded({
   items,

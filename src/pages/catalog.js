@@ -8,7 +8,6 @@ export default function CatalogCar() {
     <main>
       <Header />
       <Catalog />
-      {/* <Footer /> */}
     </main>
   );
 }

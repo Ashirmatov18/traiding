@@ -1,84 +1,88 @@
+import Footer from "@/components/Container/footer/Footer";
+import Header from "@/components/Container/Header/Header";
 import React from "react";
-import "../../styles/Detail.css";
+import styles from "../../../public/styles/Detail.module.css";
+// import "../../app/globals.css";
 
 const catalogDetails = ({ item }) => {
   // const items = JSON.stringify(item);
   return (
     <>
-      <div class="card-wrapper">
-        <div class="card">
-          <div class="product-imgs">
-            <div class="img-display">
-              <div class="img-showcase">
+      <Header />
+      <div className={styles.card_wrapper}>
+        <div className={styles.card}>
+          <div className={styles.product_imgs}>
+            <div className={styles.img_display}>
+              <div className={styles.img_showcase}>
                 <img src={item[0].image} alt="shoe5 image" />
                 <img src={item[0].image} alt="shoe 4image" />
                 <img src={item[0].image} alt="shoe 6image" />
                 <img src={item[0].image} alt="shoe 7image" />
               </div>
             </div>
-            <div class="img-select">
-              <div class="img-item">
+            <div className={styles.img_select}>
+              <div className={styles.img_item}>
                 <a href="#" data-id="1">
                   <img src={item[0].image} alt="shoe image" />
                   <div
-                    className="image_back"
+                    className={styles.image_back}
                     style={{ backgroundImage: `url(${item[0].image})` }}
                   ></div>
                 </a>
               </div>
-              <div class="img-item">
+              <div className={styles.img_item}>
                 <a href="#" data-id="2">
                   <img src={item[0].image} alt="shoe image" />
                   {/* <div
-                    className="image_back"
+                    className={styles.image_back"
                     style={{ backgroundImage: `url(${item[0].image})` }}
                   ></div> */}
                 </a>
               </div>
-              <div class="img-item">
+              <div className={styles.img_item}>
                 <a href="#" data-id="3">
                   <img src={item[0].image} alt="shoe image" />
                   <div
-                    className="image_back"
+                    className={styles.image_back}
                     style={{ backgroundImage: `url(${item[0].image})` }}
                   ></div>
                 </a>
               </div>
-              <div class="img-item">
+              <div className={styles.img_item}>
                 <a href="#" data-id="4">
                   {/* <img src = "shoes_images/shoe_4.jpg" alt = "shoe image"> */}{" "}
                   <div
-                    className="image_back"
+                    className={styles.image_back}
                     style={{ backgroundImage: `url(${item[0].image})` }}
                   ></div>
                 </a>
               </div>
             </div>
           </div>
-          <div class="product-content">
-            <h2 class="product-title">{item[0].name}</h2>
-            <a href="#" class="product-link">
+          <div className={styles.product_content}>
+            <h2 className={styles.product_title}>{item[0].name}</h2>
+            <a href="#" className={styles.product}>
               Перейти на главную
             </a>
-            <div class="product-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
+            <div className={styles.product_rating}>
+              {/* <i className={styles.fas fa-star"></i>
+              <i className={styles.fas fa-star"></i>
+              <i className={styles.fas fa-star"></i>
+              <i className={styles.fas fa-star"></i>
+              <i className={styles.fas fa-star-half-alt"></i> */}
               <span>4.7(21)</span>
             </div>
 
-            <div class="product-price">
-              <p class="last-price">
+            <div className={styles.product_price}>
+              <p className={styles.last_price}>
                 Цена: <span>$257.00</span>
               </p>
-              <p class="new-price">
+              <p className={styles.new_price}>
                 Цена с растаможкой: <span>{item[0].price}(5%)</span>
               </p>
             </div>
 
-            <div class="product-detail">
+            <div className={styles.product_detail}>
               <h2>О машине: </h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
@@ -111,16 +115,10 @@ const catalogDetails = ({ item }) => {
                 </li>
               </ul>
             </div>
-
-            <div class="purchase-info">
-              <input type="number" min="0" value="1" />
-              <button type="button" class="btn">
-                Добавить в избранное <i class="fas fa-shopping-cart"></i>
-              </button>
-            </div>
           </div>
         </div>
       </div>
+      <Footer style={{ marginTop: "50px" }} />
     </>
   );
 };

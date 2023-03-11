@@ -1,16 +1,16 @@
 import styles from "./page.module.css";
-import Test from "@/components/Test";
 import { Oswald } from "@next/font/google";
-import Header from "@/components/Container/Header/Header";
-
+import Head from "./head";
 // const oswald = Oswald({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Header />
-      <Test />
-    </main>
+    <>
+      <Head>
+        <link rel="stylesheet" href="./globals.css" />
+      </Head>
+      <main className={styles.main}></main>{" "}
+    </>
   );
 }
 

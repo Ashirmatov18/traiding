@@ -59,7 +59,7 @@
 // }
 
 import Head from "next/head";
-import styles from "../../styles/Contact.module.css";
+import styles from "../../../public/styles/Contact.module.css";
 const mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
 import { useState, useEffect } from "react";
 import "mapbox-gl/dist/mapbox-gl.css";
@@ -323,7 +323,7 @@ export default function Contacts() {
         </main>
         <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
       </div>
-      <Footer id={styles.footer_contacts} />
+      <Footer />
     </>
   );
 }

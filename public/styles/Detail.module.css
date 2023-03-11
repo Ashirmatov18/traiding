@@ -1,51 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-}
-body {
-  line-height: 1.5;
-}
-.card-wrapper {
+.card_wrapper {
   max-width: 1100px;
   margin: 0 auto;
+  color: #12263a !important;
+  margin-top: 150px !important;
 }
-img {
+/* img {
+  width: 100%;
+  display: block;
+} */
+
+.card img {
   width: 100%;
   display: block;
 }
-.img-display {
+.img_display {
   overflow: hidden;
 }
-.img-showcase {
+.img_showcase {
   display: flex;
   width: 100%;
   transition: all 0.5s ease;
 }
-.img-showcase img {
+.img_showcase img {
   min-width: 100%;
 }
-.img-select {
+.img_select {
   display: flex;
 }
-.img-item {
+.img_item {
   margin: 0.3rem;
 }
-.img-item:nth-child(1),
-.img-item:nth-child(2),
-.img-item:nth-child(3) {
+.img_item:nth-child(1),
+.img_item:nth-child(2),
+.img_item:nth-child(3) {
   margin-right: 0;
 }
-.img-item:hover {
+.img_item:hover {
   opacity: 0.8;
 }
-.product-content {
+.product_content {
   padding: 2rem 1rem;
 }
-.product-title {
+.product_title {
   font-size: 3rem;
   text-transform: capitalize;
   font-weight: 700;
@@ -53,7 +51,7 @@ img {
   color: #12263a;
   margin: 1rem 0;
 }
-.product-title::after {
+.product_title::after {
   content: "";
   position: absolute;
   left: 0;
@@ -62,7 +60,7 @@ img {
   width: 80px;
   background: #12263a;
 }
-.product-link {
+.product_link {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
@@ -74,22 +72,22 @@ img {
   padding: 0 0.3rem;
   transition: all 0.5s ease;
 }
-.product-link:hover {
+.product_link:hover {
   opacity: 0.9;
 }
-.product-rating {
+.product_rating {
   color: #ffc107;
 }
-.product-rating span {
+.product_rating span {
   font-weight: 600;
   color: #252525;
 }
-.product-price {
+.product_price {
   margin: 1rem 0;
   font-size: 1rem;
   font-weight: 700;
 }
-.product-price span {
+.product_price span {
   font-weight: 400;
 }
 .last-price span {
@@ -99,21 +97,21 @@ img {
 .new-price span {
   color: #256eff;
 }
-.product-detail h2 {
+.product_detail h2 {
   text-transform: capitalize;
   color: #12263a;
   padding-bottom: 0.6rem;
 }
-.product-detail p {
+.product_detail p {
   font-size: 0.9rem;
   padding: 0.3rem;
   opacity: 0.8;
 }
-.product-detail ul {
+.product_detail ul {
   margin: 1rem 0;
   font-size: 0.9rem;
 }
-.product-detail ul li {
+.product_detail ul li {
   margin: 0;
   list-style: none;
   /* background: url(shoes_images/checked.png) left center no-repeat; */
@@ -123,14 +121,14 @@ img {
   font-weight: 600;
   opacity: 0.9;
 }
-.product-detail ul li span {
+.product_detail ul li span {
   font-weight: 400;
 }
-.purchase-info {
+.purchase_info {
   margin: 1.5rem 0;
 }
-.purchase-info input,
-.purchase-info .btn {
+.purchase_info input,
+.purchase_info .btn {
   border: 1.5px solid #ddd;
   border-radius: 25px;
   text-align: center;
@@ -139,20 +137,20 @@ img {
   margin-right: 0.2rem;
   margin-bottom: 1rem;
 }
-.purchase-info input {
+.purchase_info input {
   width: 60px;
 }
-.purchase-info .btn {
+.purchase_info .btn {
   cursor: pointer;
   color: #fff;
 }
-.purchase-info .btn:first-of-type {
+.purchase_info .btn:first-of-type {
   background: #256eff;
 }
-.purchase-info .btn:last-of-type {
+.purchase_info .btn:last-of-type {
   background: #f64749;
 }
-.purchase-info .btn:hover {
+.purchase_info .btn:hover {
   opacity: 0.9;
 }
 .social-links {
@@ -191,12 +189,12 @@ img {
     justify-content: center;
     align-items: center;
   }
-  .product-imgs {
+  .product_imgs {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .product-content {
+  .product_content {
     padding-top: 0;
   }
 }

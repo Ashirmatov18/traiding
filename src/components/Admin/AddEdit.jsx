@@ -3,7 +3,7 @@ import axios from "axios";
 import { useRouter, Router } from "next/router";
 import { toast } from "react-toastify";
 import { useContext } from "react";
-import styles from "../../styles/ConnectUs.module.css";
+import styles from "../../../public/styles/ConnectUs.module.css";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
@@ -149,7 +149,21 @@ export default function AddEdit(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name || !driving || !year || !price || !color || !image) {
+    if (
+      !name ||
+      !driving ||
+      !year ||
+      !price ||
+      !color ||
+      !image ||
+      !mainimage ||
+      !secondimage ||
+      !thirdimage ||
+      !country ||
+      !mileage ||
+      !description ||
+      !equipment
+    ) {
       alert("error");
     } else {
       if (!id) {
@@ -230,7 +244,6 @@ export default function AddEdit(props) {
     }
   };
   console.log(inState);
-
   const handleChangeInput = (e) => {
     let { name, value } = e.target;
     setinState({ ...inState, [name]: value });
@@ -313,13 +326,13 @@ export default function AddEdit(props) {
           id="country"
           name="country"
           // value={driving || ""}
-          value={equipment ?? ""}
+          value={country ?? ""}
           onChange={handleChangeInput}
           label="Страна"
         >
-          <MenuItem value={"Базовая"}>Корея</MenuItem>
-          <MenuItem value={"Средняя"}>Кыргызстан</MenuItem>
-          <MenuItem value={"Максимальная"}>Максимальная</MenuItem>
+          <MenuItem value={"Корея"}>Корея</MenuItem>
+          <MenuItem value={"Кыргызстан"}>Кыргызстан</MenuItem>
+          <MenuItem value={"Россия"}>Россия</MenuItem>
         </Select>
       </FormControl>
       <div className={`${styles.input_container} ${styles.ic2}`}>

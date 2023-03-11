@@ -2,7 +2,31 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-top: 900px !important;
+}
+
+.booking_bg {
+  background: url("../../public/felipe-simo-kxwKM0_6Of4-unsplash.jpg") no-repeat;
+  height: 900px;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+}
+.booking_bg h1 {
+  z-index: 999;
+  color: white;
+  font-weight: 700;
+  font-size: 150px;
+  text-align: center;
+  padding-top: 155px;
+  margin-bottom: 0;
+  line-height: 296px;
+  margin-top: 150px;
 }
 
 .product_card {
@@ -29,15 +53,20 @@
 .product_image_name h1 {
   font-size: 20px;
   font-weight: 600;
+  color: red;
 }
 
 .product_card:nth-child(1) h1 {
-  color: darkorange;
+  color: red;
+}
+.pricing_info p {
+  color: #142c56 !important;
 }
 
 .details,
 .pircing_info {
   flex-basis: 50%;
+  color: #142c56 !important;
 }
 
 .img_car {

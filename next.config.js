@@ -3,8 +3,6 @@ const nextConfig = {
   // experimental: {
   //   appDir: true,
   // },
-  cssModules: true,
-
   // images: {
   //   unoptimized: "true",
   // },

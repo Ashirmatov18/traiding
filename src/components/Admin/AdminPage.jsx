@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Link from "next/link";
-import styles from "../../styles/AdminPage.module.css";
+import styles from "../../../public/styles/AdminPage.module.css";
 import PaginationRounded from "../pagination/Pagination";
 import { paginate } from "../pagination/paginate";
 import { useRouter } from "next/router";
@@ -27,7 +27,7 @@ export default function AdminPage() {
   const [value, setValue] = useState("");
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const pageSize = 2;
+  const pageSize = 10;
 
   useEffect(() => {
     getUsers();
@@ -133,7 +133,12 @@ export default function AdminPage() {
                 <h1 className={styles.card_title}>{item.name}</h1>
                 <p className={styles.card_desc}>{item.price}</p>
                 <div className={styles.card_button_body}>
-                  <button className={styles.card_button}>Подробнее</button>
+                  <Link
+                    href={"/catalogdetail/[id]"}
+                    as={`/catalogdetail/${item.id}`}
+                  >
+                    <button className={styles.card_button}>Подробнее</button>
+                  </Link>
                 </div>
               </div>
             </div>

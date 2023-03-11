@@ -5,10 +5,10 @@ import React from "react";
 
 export default function Connectus() {
   return (
-    <main>
+    <>
       <Header />
       <ConnectUs />
       <Footer />
-    </main>
+    </>
   );
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import styles from "../../../styles/Header.module.css";
+import styles from "../../../../public/styles/Header.module.css";
 import logo from "../../../../public/IMG_0844.PNG";
 import Link from "next/link";
 
@@ -14,19 +14,23 @@ export default function Header() {
         </label>
         <label htmlFor={styles.active} className={styles.close}></label>
         <div className={styles.wrapper}>
-          {/* <Link href="/">
+          <Link href="/">
             <Image className={styles.logo} src={logo} />
-          </Link> */}
+          </Link>
 
           <ul>
             <li>
-              <Link href="/catalog">КАТАЛОГ</Link>
+              <Link href="/catalog" key="catalog">
+                КАТАЛОГ
+              </Link>
             </li>
             <li>
-              <Link href="/aboutus">О НАС</Link>
+              <Link href="/aboutus" key="aboutus">
+                О НАС
+              </Link>
             </li>
             <li>
-              <Link href="/aboutus">ТОВАРЫ</Link>
+              <Link href="/booking">ТОВАРЫ</Link>
             </li>
             <li>
               <Link href="/contacts">АДРЕС</Link>
