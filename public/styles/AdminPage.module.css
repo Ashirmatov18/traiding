@@ -6,7 +6,8 @@
 }
 
 .contacts_bg {
-  background: url("../../public/felipe-simo-kxwKM0_6Of4-unsplash.jpg") no-repeat;
+  background: url("../../public/images/felipe-simo-kxwKM0_6Of4-unsplash.jpg")
+    no-repeat;
   height: 900px;
   background-size: cover;
   position: absolute;

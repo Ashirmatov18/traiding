@@ -7,7 +7,7 @@
 }
 
 .main_bg_image {
-  background: url("../../public/maksim-tarasov-bFTVxTo266E-unsplash\ \(1\).jpg");
+  background: url("../../public/images/maksim-tarasov-bFTVxTo266E-unsplash\ \(1\).jpg");
   height: 820px;
   background-size: cover;
   position: absolute;
@@ -106,7 +106,7 @@
 }
 
 .first_image {
-  background: url("../../public/evgeny-tchebotarev-aiwuLjLPFnU-unsplash.jpg")
+  background: url("../../public/images/evgeny-tchebotarev-aiwuLjLPFnU-unsplash.jpg")
     no-repeat;
   width: 751px;
   height: 389px;

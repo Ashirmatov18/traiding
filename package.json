@@ -28,6 +28,7 @@
     "react-dom": "18.2.0",
     "react-owl-carousel": "^2.3.3",
     "react-scroll-up-button": "^1.6.4",
-    "react-toastify": "^9.1.1"
+    "react-toastify": "^9.1.1",
+    "url-loader": "^4.1.1"
   }
 }

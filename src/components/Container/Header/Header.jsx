@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "../../../../public/styles/Header.module.css";
-import logo from "../../../../public/IMG_0844.PNG";
+import logo from "../../../../public/images/IMG_0844.PNG";
 import Link from "next/link";
 
 export default function Header() {
