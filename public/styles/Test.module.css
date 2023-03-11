@@ -84,7 +84,7 @@
   display: flex;
   width: 600px;
   padding: 6rem;
-  justify-content: start;
+  justify-content: flex-start;
   font-size: 20px;
   text-align: center;
   padding-left: 0;
