@@ -7,7 +7,7 @@ import { paginate } from "../pagination/paginate";
 import { useRouter } from "next/router";
 import { useContext } from "react";
 import { toast } from "react-toastify";
-
+import Image from "next/image";
 // const style = {
 //   position: "absolute",
 //   top: "50%",
@@ -113,12 +113,13 @@ export default function AdminPage() {
       {data &&
         paginateData.map((item, index) => {
           return (
-            <div className={styles.card}>
+            <div className={styles.card} key={index}>
               <ul className={styles.card_menu}>
                 <a className={styles.car_menu_item}>
-                  <img
+                  <Image
                     className={styles.card_menu_img}
                     src={item.secondimage}
+                    alt={"card_menu_img"}
                   />
                 </a>
               </ul>
