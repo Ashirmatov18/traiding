@@ -217,7 +217,7 @@ export default function Test() {
         </video>
         <div className={styles.main_name}>
           <div className={styles.logo_center}>
-            <Image className={styles.logo} src={logo} />
+            <Image className={styles.logo} src={logo} alt="main_logo" />
 
             <h1>
               Автомобили <br /> из{" "}

@@ -15,7 +15,7 @@ export default function Header() {
         <label htmlFor={styles.active} className={styles.close}></label>
         <div className={styles.wrapper}>
           <Link href="/">
-            <Image className={styles.logo} src={logo} />
+            <Image className={styles.logo} src={logo} alt="logo" />
           </Link>
 
           <ul>

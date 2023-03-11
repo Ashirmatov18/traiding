@@ -115,13 +115,13 @@ export default function AdminPage() {
           return (
             <div className={styles.card} key={index}>
               <ul className={styles.card_menu}>
-                <a className={styles.car_menu_item}>
+                <Link className={styles.car_menu_item}>
                   <Image
                     className={styles.card_menu_img}
                     src={item.secondimage}
-                    alt={"card_menu_img"}
+                    alt="card_menu_img"
                   />
-                </a>
+                </Link>
               </ul>
 
               {/* <div
