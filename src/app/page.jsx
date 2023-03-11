@@ -1,6 +1,8 @@
+import React from "react";
 import styles from "./page.module.css";
 import { Oswald } from "@next/font/google";
 import Head from "./head";
+
 // const oswald = Oswald({ subsets: ["latin"] });
 
 export default function Home() {
